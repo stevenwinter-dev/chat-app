@@ -38,6 +38,7 @@ export default class ChatContainer extends Component {
         @param reset {boolean} if true will set the chat as the only chat.
     */
     addChat = (chat, reset)=>{
+        console.log(chat);
         const { socket } = this.props
         const { chats } = this.state
 
