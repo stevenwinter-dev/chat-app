@@ -7,8 +7,8 @@ import { MdMoreHoriz } from 'react-icons/md';
 export default function({name, numberOfUsers}) {
     const iconStyle = {
         cursor: 'pointer',
-        fontSize: '2em',
-        marginRight: '.75em'
+        fontSize: '1.5em',
+        marginRight: '1.5em'
     };
 
     return (
