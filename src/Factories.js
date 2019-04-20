@@ -8,10 +8,11 @@ const uuidv4 = require('uuid/v4');
 *   @param {object}
 *       name {string}
 */
-const createUser = ({name= ''} = {})=>(
+const createUser = ({name= '', socketId = null} = {})=>(
     {
         id:uuidv4(),
-        name
+        name,
+        socketId
     }
 )
 
@@ -47,7 +48,7 @@ const createMessage = ({message= '', sender= ''} = {})=>(
 *       name{string}
 *       users {Array.string}
 */
-const createChat = ({messages= [], name= 'Community', users= []} = {})=>(
+const createChat = ({messages= [], name= 'Main', users= []} = {})=>(
     {
         id:uuidv4(),
         name,
